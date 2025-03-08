@@ -1,0 +1,113 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    background-color: #121826;
+    background-image: url("./img/Background_image.svg");
+    font-family: "Outift";
+    padding-bottom:80px;
+}
+.container-completo{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-completo .titulo-principal{
+    color: #D2D5DA;
+    font-family: "Outfit";
+    font-weight: 600;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+.container-completo .descricao-principal{
+    margin-top: 15px;
+    color:#9DA3AE;
+    font-family: "Outfits";
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.caixa{
+    background-color: #212936;
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: left;
+}
+.caixa img{
+    border-radius: 20px;
+}
+.caixa .titulo-caixas{
+    font-size: 1.8rem;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+    font-family: "Outfit";
+    font-weight: 600;
+    
+}
+.caixa .descricao-caixas{
+    font-size: 1.2rem;
+    max-width: 22ch;
+    margin-bottom: 20px;
+    color: #9DA3AE;
+    font-family: "Outfit";
+}
+.caixa .emoji-mao{
+    margin-bottom: 15px;
+    display: inline-block;
+    background-color:#FCEED8 ;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.caixa .emoji-rede{
+    margin-bottom: 15px;
+    display: inline-block;
+    background-color:#DEE9FC ;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.caixa .emoji-balao{
+    margin-bottom: 15px;
+    display: inline-block;
+    background-color:#FBE5E6 ;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+/* MEDIA QUERIES */
+
+@media (max-width:1028px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media (max-width:640px){
+    .container-completo .titulo-principal{
+        font-size: 3rem;
+    }
+    .container-completo .descricao-principal{
+        font-size: 1.5rem;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
